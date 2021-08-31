@@ -40,10 +40,10 @@ body {
 }
 
 .board h3 {
-  color: goldenrod;
-  font-size: 18px;
+  color: rgb(238, 235, 235);
+  font-size: 14px;
   position: absolute;
-  top: 20px;
+  bottom: -70px;
   left: 20px;
   opacity: 0;
 }
