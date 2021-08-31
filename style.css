@@ -10,6 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: black;
 }
 
 .container {
@@ -20,7 +21,7 @@ body {
 .header {
   position: fixed;
   top: 30px;
-
+  color: white;
   font-family: monospace;
   font-size: xx-large;
 }
@@ -34,7 +35,8 @@ body {
   flex: 0.5;
   margin: 10px;
   position: relative;
-  transition: flex 2.7s ease-out;
+  transition: flex 1s ease-out;
+  border: 6px solid rgb(243, 237, 237);
 }
 
 .board h3 {
@@ -47,10 +49,10 @@ body {
 }
 
 .board.active {
-  flex: 0.7;
+  flex: 0.9;
 }
 
 .board.active h3 {
   opacity: 1;
-  transition: opacity 1.3s ease-in 0.4s;
+  transition: opacity 1.3s ease 0.4s;
 }
