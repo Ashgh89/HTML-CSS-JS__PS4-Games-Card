@@ -7,24 +7,32 @@
 body {
   font-family: "Roboto", sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: black;
 }
 
+.header {
+  /* position: absolute; */
+
+  color: white;
+  font-family: monospace;
+  font-size: x-large;
+  margin-bottom: 3rem;
+  height: 80px;
+  background: rgb(48, 105, 2);
+  width: 100%;
+  text-align: center;
+  padding-top: 1.3rem;
+}
 .container {
   display: flex;
   width: 90vw;
+  /* margin-top: 3px; */
 }
 
-.header {
-  position: fixed;
-  top: 30px;
-  color: white;
-  font-family: monospace;
-  font-size: xx-large;
-}
 .board {
   background-size: cover;
   background-position: center;
@@ -45,6 +53,7 @@ body {
   position: absolute;
   bottom: -70px;
   left: 20px;
+  margin-bottom: 6rem;
   opacity: 0;
 }
 
@@ -54,5 +63,15 @@ body {
 
 .board.active h3 {
   opacity: 1;
-  transition: opacity 1.3s ease 0.4s;
+  transition: opacity 1.1s ease 0.4s;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: block;
+  }
+  .header {
+    /* position: fixed; */
+    margin-bottom: 3rem;
+  }
 }
